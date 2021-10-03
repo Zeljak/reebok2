@@ -315,7 +315,11 @@ h2 {
   }
 }
 
-.links-section {
+.grid-wrapper {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(4, [col] 180px);
+  grid-template-rows: repeat(2, [row] auto);
   background: url(../_assets/images/lead-with-your-legacy-reebok.png) no-repeat
     center;
   background-size: cover;
@@ -323,63 +327,26 @@ h2 {
   font-family: $family-secondary;
   font-size: 37px;
   font-weight: 700;
-  padding-top: 20px;
-  
-  @media (max-width: 1023px) {
-    display: none;
-  }
+  padding-top: 60px;
+  padding-left: 25%;
+  padding-right: 20%;
 }
 
-
-.sto-nose {
-  
-  position: relative;
-  left: 400px;
-  top: 40px;
-
-  &__button {
-    position: relative;
-    left: 390px;
-    top: 80px;
-
-   
-  }
+.a {
+  grid-column: col / span 2;
+  grid-row: row;
 }
-
-.oni-su {
-  position: relative;
-  left: 800px;
-  top: -298px;
-
-  &__button {
-    position: relative;
-    left: 800px;
-    top: -262px;
-  }
+.b {
+  grid-column: col 3 / span 2;
+  grid-row: row;
 }
-
-.pitali-smo {
-  position: relative;
-  left: 400px;
-  top: -170px;
-
-  &__button {
-    position: relative;
-    left: 400px;
-    top: -100px;
-  }
+.c {
+  grid-column: col 1 / span 2;
+  grid-row: row 2;
 }
-
-.evo-kako {
-  position: relative;
-  left: 800px;
-  top: -735px;
-
-  &__button {
-    position: relative;
-    left: 800px;
-    bottom: 500px;
-  }
+.d {
+  grid-column: col 3 / span 2;
+  grid-row: row 2;
 }
 
 //FOOTER
