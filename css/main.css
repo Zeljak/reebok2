@@ -11485,6 +11485,8 @@ section.full {
   max-width: 100vw;
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 a {
@@ -11537,9 +11539,13 @@ h2 {
 
 #menuToggle {
   display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-top: 10px;
   z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -11630,7 +11636,7 @@ h2 {
  */
 #menu {
   position: absolute;
-  width: 300px;
+  width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -11648,10 +11654,45 @@ h2 {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-#menu li {
-  padding: 20px 0;
-  font-size: 33px;
-  font-family: "Anton", sans-serif;
+@media (max-width: 767px) {
+  #menu li {
+    padding: 20px 50px;
+    font-size: 33px;
+    font-family: "Anton", sans-serif;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  #menu li {
+    padding-left: 260px;
+    font-size: 33px;
+    font-family: "Anton", sans-serif;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .button-menu {
+    padding-left: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .button-menu {
+    padding-left: 230px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .button-menu2 {
+    padding-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .button-menu2 {
+    padding-left: 160px;
+    padding-top: 20px;
+  }
 }
 
 #menuToggle input:checked ~ ul {
@@ -11689,6 +11730,11 @@ h2 {
   max-width: 80%;
   margin: auto;
 }
+@media (max-width: 767px) {
+  .text-block {
+    background-color: white;
+  }
+}
 
 .text-block__black {
   color: white;
@@ -11715,11 +11761,26 @@ h2 {
 @media (max-width: 767px) {
   .text-block__black {
     font-size: 16px;
+    padding-top: 0;
   }
 }
 @media (max-width: 767px) {
   .text-block__black {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .yellow-block {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -11776,7 +11837,7 @@ h2 {
   grid-template-rows: repeat(2, [row] auto);
   background: url(../_assets/images/lead-with-your-legacy-reebok.png) no-repeat center;
   background-size: cover;
-  height: 1350px;
+  height: 1400px;
   font-family: "Anton", sans-serif;
   font-size: 37px;
   font-weight: 700;
