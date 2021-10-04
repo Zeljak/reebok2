@@ -363,7 +363,7 @@ h2 {
 
 .grid-wrapper {
   display: grid;
-  grid-gap: 40px;
+  grid-gap: 0;
   grid-template-columns: repeat(4, [col] 180px);
   grid-template-rows: repeat(2, [row] auto);
   background: url(../_assets/images/lead-with-your-legacy-reebok.png) no-repeat

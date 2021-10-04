@@ -11830,10 +11830,10 @@ h2 {
 .grid-wrapper {
   display: -ms-grid;
   display: grid;
-  grid-gap: 40px;
-  -ms-grid-columns: [col] 40px 180px 40px [col] 40px 180px 40px [col] 40px 180px 40px [col] 40px 180px;
+  grid-gap: 0;
+  -ms-grid-columns: [col] 0 180px 0 [col] 0 180px 0 [col] 0 180px 0 [col] 0 180px;
   grid-template-columns: repeat(4, [col] 180px);
-  -ms-grid-rows: [row] 40px auto 40px [row] 40px auto;
+  -ms-grid-rows: [row] 0 auto 0 [row] 0 auto;
   grid-template-rows: repeat(2, [row] auto);
   background: url(../_assets/images/lead-with-your-legacy-reebok.png) no-repeat center;
   background-size: cover;
